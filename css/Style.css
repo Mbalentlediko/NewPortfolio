@@ -1,31 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} 
+:root{
+  --primary:rgb(23, 21, 21);
+  --secondary:black;
+  --alternative:rgba(255, 255, 255, 0.851);
+  --bgHeaderFooter: rgb(37, 22, 22);
+  --mainBoxShadow:rgba(128, 128, 128, 0.925);
+  --textcolor:white;
+  --animecolor: blue;
+  --resumeText:rgb(15, 102, 209);
+  
+}
 body{
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
+        background-color: rgb(53, 50, 50);;
       } 
-      body{
-        background-color: white;
-        /* margin: 0px; */
-        
-    }
-*,
-*::before,
-*::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-    :root{
-        --primary:rgb(23, 21, 21);
-        --secondary:black;
-        --alternative:rgba(255, 255, 255, 0.851);
-        --bgHeaderFooter: rgb(37, 22, 22);
-        --mainBoxShadow:rgba(128, 128, 128, 0.925);
-        --textcolor:white;
-
-    }
-    ::-webkit-scrollbar {
+::-webkit-scrollbar {
         display: none;
     }
     :is(.navbar) {
@@ -46,15 +45,13 @@ body{
     text-align:left;
     margin: 45;
     /* px 0 45px; */
-    text-decoration: underline;
-    font-size:medium;
+    /* text-decoration: underline; */
+    /* font-size:medium; */
     color: var(--textcolor);
  }
  #Home{
-    background-color: var(--secondary);
-    /* border-color:var(--secondary); */
-    /* border-width:px; */
-/* width: 100%;} */}
+    background-color: var(--primary);
+}
 a {
 
 }
@@ -76,9 +73,132 @@ img[alt='logo'] {
   p{
     color: white;
   }
-  img[alt='logo'],a:hover {
-width:150px;
+   img[alt='logo'],a {
+    transition:all .4s;
+    &:hover{
+      transform: scale(1.2s)
+    }
   }
+
+  
    .name{
     font-size: large;
    }
+   h3{
+    color: var(--textcolor);
+    font-size: medium;
+     text-decoration:underline;
+   }
+#About{
+  background-color: rgba(128, 128, 128, 0.885);
+}
+#Skills{
+  background-color: rgb(46, 37, 37);
+}
+#Resume{
+  background-color: rgb(80, 72, 72);
+  /* padding: 100px;
+  border: 2px; */
+}
+#Projects{
+  background-color: rgb(79, 75, 75);
+}
+#Reachme{
+background-color: rgb(18, 9, 9);
+}
+.nav-link active{
+  justify-content:right;
+}
+.img1{
+  border-radius: 100%;
+  float: right;
+  animation: scale-animation 4s;
+}
+h1{
+  /* justify-content: center; */
+  /* display: flex;
+  align-items: center; */
+  text-indent: 300px;
+  color: var(--textcolor);
+  padding: 100px;
+}
+h1 {
+  transition: transform 2s ease;
+}
+h1:hover {
+  transform: translateX(50px);
+}
+p{
+  
+}
+.intro{
+  justify-content: center;
+  /* text-align: center;  */
+}
+.calculator{
+  width: 5rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scale-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#animated-image {
+  animation-name: rotate-animation, scale-animation;
+  animation-duration: 2s, 4s;
+  animation-delay: 0s, 2s;
+  animation-timing-function: ease-in-out, linear;
+  animation-iteration-count: 2, infinite;
+}
+.resume{
+  font-size: medium;
+}
+.qualification{
+/* margin:50px */
+  font-size: 150%;
+    color:var(--resumeText)
+}
+.distinction1{
+  font-size: 145%;
+  color:gray;
+}
+.lead{
+  padding:40px;
+  margin: 45px;
+
+}
+.qualification2{
+  color:rgb(19, 19, 237);
+  font-size: 150%;
+} 
+.place{
+  font-size: 145%;
+  color: rgb(9, 9, 46);
+}
+.firstskill{
+
+  padding:75px;
+  font-size: 150%;
+}
+.skills{
+  font-size: 145%;
+}
