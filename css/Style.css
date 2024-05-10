@@ -8,8 +8,8 @@
   box-sizing: border-box;
 } 
 :root{
-  --primary:rgb(23, 21, 21);
-  --secondary:black;
+  --primary:rgb(12, 12, 12);
+  --secondary:rgb(15, 10, 10);
   --alternative:rgba(255, 255, 255, 0.851);
   --bgHeaderFooter: rgb(37, 22, 22);
   --mainBoxShadow:rgba(128, 128, 128, 0.925);
@@ -73,15 +73,15 @@ img[alt='logo'] {
   p{
     color: white;
   }
-   img[alt='logo'],a {
+   /* img[alt='logo'],a {
     transition:all .4s;
     &:hover{
       transform: scale(1.2s)
     }
   }
 
-  
-   .name{
+  */
+   .name{ 
     font-size: large;
    }
    h3{
@@ -109,11 +109,12 @@ background-color: rgb(18, 9, 9);
 .nav-link active{
   justify-content:right;
 }
-.img1{
+
+/* .img1{
   border-radius: 100%;
   float: right;
   animation: scale-animation 4s;
-}
+} */
 h1{
   /* justify-content: center; */
   /* display: flex;
@@ -141,26 +142,27 @@ p{
     object-fit: cover;
     object-position: center;
 }
-@keyframes rotate-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+        /* CSS for the first picture */
+        .firstpicture {
+          text-align: center;
+          animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+      }
 
-@keyframes scale-animation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+      /* CSS for headings */
+      .firstpicture h1,
+      .firstpicture h2 {
+          animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+      }
+
+      /* Fade-in animation */
+      @keyframes fadeIn {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
 
 #animated-image {
   animation-name: rotate-animation, scale-animation;
@@ -201,4 +203,7 @@ p{
 }
 .skills{
   font-size: 145%;
+}
+#Reachme{
+   padding: 150px;
 }
