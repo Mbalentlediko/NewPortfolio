@@ -8,8 +8,8 @@
   box-sizing: border-box;
 } 
 :root{
-  --primary:rgb(23, 21, 21);
-  --secondary:black;
+  --primary:rgb(12, 12, 12);
+  --secondary:rgb(15, 10, 10);
   --alternative:rgba(255, 255, 255, 0.851);
   --bgHeaderFooter: rgb(37, 22, 22);
   --mainBoxShadow:rgba(128, 128, 128, 0.925);
@@ -41,20 +41,13 @@ body{
     background-color: var(--bgHeaderFooter);
     color: var(--textcolor);
  }
- section>h2{
-    text-align:left;
-    margin: 45;
-    /* px 0 45px; */
-    /* text-decoration: underline; */
-    /* font-size:medium; */
-    color: var(--textcolor);
- }
+ 
  #Home{
     background-color: var(--primary);
 }
-a {
-
-}
+/* a {
+  
+} */
 img[alt='logo'] {
     width: 5rem;
     aspect-ratio: 1/1;
@@ -73,24 +66,25 @@ img[alt='logo'] {
   p{
     color: white;
   }
-   img[alt='logo'],a {
+
+  /* img[alt='logo'],a {
     transition:all .4s;
     &:hover{
       transform: scale(1.2s)
     }
   }
 
-  
-   .name{
-    font-size: large;
+  */
+   .name{ 
+     font-size: large;
    }
    h3{
     color: var(--textcolor);
     font-size: medium;
      text-decoration:underline;
-   }
-#About{
-  background-color: rgba(128, 128, 128, 0.885);
+    }
+    #About{
+      background-color: rgba(128, 128, 128, 0.885);
 }
 #Skills{
   background-color: rgb(46, 37, 37);
@@ -104,51 +98,85 @@ img[alt='logo'] {
   background-color: rgb(79, 75, 75);
 }
 #Reachme{
-background-color: rgb(18, 9, 9);
+  background-color: rgb(18, 9, 9);
 }
 .nav-link active{
   justify-content:right;
 }
-.img1{
-  border-radius: 100%;
-  float: right;
-  animation: scale-animation 4s;
-}
+
 h1{
   /* justify-content: center; */
   /* display: flex;
   align-items: center; */
-  text-indent: 300px;
+  /* text-indent: 300px; */
   color: var(--textcolor);
   padding: 100px;
 }
+
 h1 {
   transition: transform 2s ease;
 }
 h1:hover {
-  transform: translateX(50px);
+  transform: translateX(-50px);
 }
-p{
+
+/* p{
   
-}
+} */
 .intro{
   justify-content: center;
   /* text-align: center;  */
 }
 .calculator{
   width: 5rem;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    object-position: center;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
 }
-@keyframes rotate-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+/* CSS for the first picture */
+.firstpicture {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
 }
+
+.resume{
+  font-size: medium;
+}
+.qualification{
+  /* margin:50px */
+  font-size: 150%;
+  color:var(--resumeText)
+}
+.distinction1{
+  font-size: 145%;
+  color:gray;
+}
+.lead{
+  padding:40px;
+  margin: 45px;
+  
+}
+.qualification2{
+  color:rgb(19, 19, 237);
+  font-size: 150%;
+} 
+.place{
+  font-size: 145%;
+  color: rgb(9, 9, 46);
+}
+.firstskill{
+  
+  padding:75px;
+  font-size: 150%;
+}
+.skills{
+  font-size: 145%;
+}
+#Reachme{
+  padding: 150px;
+}
+
+/* animations */
 
 @keyframes scale-animation {
   0% {
@@ -162,43 +190,45 @@ p{
   }
 }
 
-#animated-image {
-  animation-name: rotate-animation, scale-animation;
-  animation-duration: 2s, 4s;
-  animation-delay: 0s, 2s;
-  animation-timing-function: ease-in-out, linear;
-  animation-iteration-count: 2, infinite;
-}
-.resume{
-  font-size: medium;
-}
-.qualification{
-/* margin:50px */
-  font-size: 150%;
-    color:var(--resumeText)
-}
-.distinction1{
-  font-size: 145%;
-  color:gray;
-}
-.lead{
-  padding:40px;
-  margin: 45px;
 
-}
-.qualification2{
-  color:rgb(19, 19, 237);
-  font-size: 150%;
-} 
-.place{
-  font-size: 145%;
-  color: rgb(9, 9, 46);
-}
-.firstskill{
 
-  padding:75px;
-  font-size: 150%;
-}
-.skills{
-  font-size: 145%;
-}
+
+/* CSS for headings */
+/* .firstpicture h1,
+.firstpicture h2 {
+  animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+  /* } */ */
+  
+  /* Fade-in animation */
+  /* @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #animated-image {
+      animation-name: rotate-animation, scale-animation;
+      animation-duration: 2s, 4s;
+    animation-delay: 0s, 2s;
+    animation-timing-function: ease-in-out, linear;
+    animation-iteration-count: 2, infinite;
+  } */
+
+
+  /* .img1{
+    border-radius: 100%;
+    float: right;
+    animation: scale-animation 4s;
+  } */
+
+  /* section>h2{
+     text-align:left;
+     margin: 45;
+     /* px 0 45px; */
+     /* text-decoration: underline; */
+     /* font-size:medium; */
+     /* color: var(--textcolor); */
+  /* }  */
