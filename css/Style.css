@@ -8,11 +8,11 @@
   box-sizing: border-box;
 } 
 :root{
-  --primary:rgb(9, 8, 8);
-  --secondary:rgb(28, 26, 26);
+  --primary:rgba(10, 6, 6, 0.415);
+  --secondary:rgba(21, 21, 21, 0.189);
   --alternative:rgba(255, 255, 255, 0.851);
   --bgHeaderFooter: rgb(37, 22, 22);
-  --mainBoxShadow:rgba(128, 128, 128, 0.925);
+  --mainBoxShadow:rgba(32, 31, 31, 0);
   --textcolor:white;
   --animecolor: blue;
   --resumeText:rgb(15, 102, 209);
@@ -193,8 +193,10 @@ h1:hover {
   }
 }
 
-
-
+.img1{
+  border-radius: 50%; 
+  float: inline-end;
+}
 
 /* CSS for headings */
 /* .firstpicture h1,
